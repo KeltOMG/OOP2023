@@ -3,8 +3,9 @@ C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
-C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/datastructures/CMakeFiles/data_structures.dir
+C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/datastructures/CMakeFiles/datastructures.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/datastructures/CMakeFiles/edit_cache.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/datastructures/CMakeFiles/rebuild_cache.dir
+C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/algorithms/CMakeFiles/edit_cache.dir
 C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/algorithms/CMakeFiles/rebuild_cache.dir

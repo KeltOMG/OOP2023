@@ -72,6 +72,17 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "datastructures::@16bd4563d045845c2191"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "algorithms::@4f84be16bc75261b2db5"
+		}
+	],
 	"id" : "OOP2023::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
@@ -87,12 +98,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-lalgorithms",
+				"fragment" : "libs\\algorithms\\libalgorithms.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "-ldatastructures",
+				"fragment" : "libs\\datastructures\\libdatastructures.a",
 				"role" : "libraries"
 			},
 			{

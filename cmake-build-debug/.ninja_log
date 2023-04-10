@@ -1,4 +1,10 @@
 # ninja log v5
 9	5321	7027932984733547	CMakeFiles/OOP2023.dir/libs/datastructures/vector/vector.c.obj	d70a6276f0fff3c3
-1	5326	7027932984733547	CMakeFiles/OOP2023.dir/main.c.obj	cba27e6df0d00c04
 3	154	7027943355768766	CMakeFiles/OOP2023.dir/main.c.obj	cba27e6df0d00c04
+15	954	7027950698327387	libs/datastructures/CMakeFiles/datastructures.dir/vector/vectorVoid.c.obj	bcd41f52bcc70939
+4	1035	7027950699097396	libs/datastructures/CMakeFiles/datastructures.dir/vector/vector.c.obj	da2650fbdcb17704
+1035	1611	7027950704857360	libs/datastructures/libdatastructures.a	7096d327e6a98653
+1	295	7027951674713572	build.ninja	9fda88a0ce301a95
+4	85	7027951676743575	libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj	497c80c84790a410
+92	227	7027951678123614	libs/algorithms/libalgorithms.a	fb597c72fabb096b
+227	479	7027951680613574	OOP2023.exe	606839011ca845b2

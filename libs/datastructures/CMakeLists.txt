@@ -1,1 +1,1 @@
-add_library(data_structures vector/vector.c vector/vectorVoid.c)
+add_library(datastructures vector/vector.c vector/vectorVoid.c)

@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/
 #############################################
 # Order-only phony target for OOP2023
 
-build cmake_object_order_depends_target_OOP2023: phony || CMakeFiles/OOP2023.dir
+build cmake_object_order_depends_target_OOP2023: phony || cmake_object_order_depends_target_algorithms cmake_object_order_depends_target_datastructures
 
 build CMakeFiles/OOP2023.dir/main.c.obj: C_COMPILER__OOP2023_Debug C$:/Users/artem/CLionProjects/OOP2023/main.c || cmake_object_order_depends_target_OOP2023
   DEP_FILE = CMakeFiles\OOP2023.dir\main.c.obj.d
@@ -63,9 +63,9 @@ build CMakeFiles/OOP2023.dir/main.c.obj: C_COMPILER__OOP2023_Debug C$:/Users/art
 #############################################
 # Link the executable OOP2023.exe
 
-build OOP2023.exe: C_EXECUTABLE_LINKER__OOP2023_Debug CMakeFiles/OOP2023.dir/main.c.obj
+build OOP2023.exe: C_EXECUTABLE_LINKER__OOP2023_Debug CMakeFiles/OOP2023.dir/main.c.obj | libs/algorithms/libalgorithms.a libs/datastructures/libdatastructures.a || libs/algorithms/libalgorithms.a libs/datastructures/libdatastructures.a
   FLAGS = -g
-  LINK_LIBRARIES = -lalgorithms  -ldatastructures  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libs/algorithms/libalgorithms.a  libs/datastructures/libdatastructures.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\OOP2023.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -130,41 +130,41 @@ build libs/rebuild_cache: phony libs/CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target data_structures
+# Object build statements for STATIC_LIBRARY target datastructures
 
 
 #############################################
-# Order-only phony target for data_structures
+# Order-only phony target for datastructures
 
-build cmake_object_order_depends_target_data_structures: phony || libs/datastructures/CMakeFiles/data_structures.dir
+build cmake_object_order_depends_target_datastructures: phony || libs/datastructures/CMakeFiles/datastructures.dir
 
-build libs/datastructures/CMakeFiles/data_structures.dir/vector/vector.c.obj: C_COMPILER__data_structures_Debug C$:/Users/artem/CLionProjects/OOP2023/libs/datastructures/vector/vector.c || cmake_object_order_depends_target_data_structures
-  DEP_FILE = libs\datastructures\CMakeFiles\data_structures.dir\vector\vector.c.obj.d
+build libs/datastructures/CMakeFiles/datastructures.dir/vector/vector.c.obj: C_COMPILER__datastructures_Debug C$:/Users/artem/CLionProjects/OOP2023/libs/datastructures/vector/vector.c || cmake_object_order_depends_target_datastructures
+  DEP_FILE = libs\datastructures\CMakeFiles\datastructures.dir\vector\vector.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = libs\datastructures\CMakeFiles\data_structures.dir
-  OBJECT_FILE_DIR = libs\datastructures\CMakeFiles\data_structures.dir\vector
+  OBJECT_DIR = libs\datastructures\CMakeFiles\datastructures.dir
+  OBJECT_FILE_DIR = libs\datastructures\CMakeFiles\datastructures.dir\vector
 
-build libs/datastructures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: C_COMPILER__data_structures_Debug C$:/Users/artem/CLionProjects/OOP2023/libs/datastructures/vector/vectorVoid.c || cmake_object_order_depends_target_data_structures
-  DEP_FILE = libs\datastructures\CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj.d
+build libs/datastructures/CMakeFiles/datastructures.dir/vector/vectorVoid.c.obj: C_COMPILER__datastructures_Debug C$:/Users/artem/CLionProjects/OOP2023/libs/datastructures/vector/vectorVoid.c || cmake_object_order_depends_target_datastructures
+  DEP_FILE = libs\datastructures\CMakeFiles\datastructures.dir\vector\vectorVoid.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = libs\datastructures\CMakeFiles\data_structures.dir
-  OBJECT_FILE_DIR = libs\datastructures\CMakeFiles\data_structures.dir\vector
+  OBJECT_DIR = libs\datastructures\CMakeFiles\datastructures.dir
+  OBJECT_FILE_DIR = libs\datastructures\CMakeFiles\datastructures.dir\vector
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target data_structures
+# Link build statements for STATIC_LIBRARY target datastructures
 
 
 #############################################
-# Link the static library libs\datastructures\libdata_structures.a
+# Link the static library libs\datastructures\libdatastructures.a
 
-build libs/datastructures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug libs/datastructures/CMakeFiles/data_structures.dir/vector/vector.c.obj libs/datastructures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
+build libs/datastructures/libdatastructures.a: C_STATIC_LIBRARY_LINKER__datastructures_Debug libs/datastructures/CMakeFiles/datastructures.dir/vector/vector.c.obj libs/datastructures/CMakeFiles/datastructures.dir/vector/vectorVoid.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = libs\datastructures\CMakeFiles\data_structures.dir
+  OBJECT_DIR = libs\datastructures\CMakeFiles\datastructures.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = libs\datastructures\libdata_structures.a
-  TARGET_PDB = data_structures.a.dbg
+  TARGET_FILE = libs\datastructures\libdatastructures.a
+  TARGET_PDB = datastructures.a.dbg
 
 
 #############################################
@@ -194,6 +194,37 @@ build libs/datastructures/rebuild_cache: phony libs/datastructures/CMakeFiles/re
 # C:/Users/artem/CLionProjects/OOP2023/libs/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target algorithms
+
+
+#############################################
+# Order-only phony target for algorithms
+
+build cmake_object_order_depends_target_algorithms: phony || libs/algorithms/CMakeFiles/algorithms.dir
+
+build libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj: C_COMPILER__algorithms_Debug C$:/Users/artem/CLionProjects/OOP2023/libs/algorithms/algorithms.c || cmake_object_order_depends_target_algorithms
+  DEP_FILE = libs\algorithms\CMakeFiles\algorithms.dir\algorithms.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = libs\algorithms\CMakeFiles\algorithms.dir
+  OBJECT_FILE_DIR = libs\algorithms\CMakeFiles\algorithms.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target algorithms
+
+
+#############################################
+# Link the static library libs\algorithms\libalgorithms.a
+
+build libs/algorithms/libalgorithms.a: C_STATIC_LIBRARY_LINKER__algorithms_Debug libs/algorithms/CMakeFiles/algorithms.dir/algorithms.c.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = libs\algorithms\CMakeFiles\algorithms.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libs\algorithms\libalgorithms.a
+  TARGET_PDB = algorithms.a.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -222,9 +253,13 @@ build libs/algorithms/rebuild_cache: phony libs/algorithms/CMakeFiles/rebuild_ca
 
 build OOP2023: phony OOP2023.exe
 
-build data_structures: phony libs/datastructures/libdata_structures.a
+build algorithms: phony libs/algorithms/libalgorithms.a
 
-build libdata_structures.a: phony libs/datastructures/libdata_structures.a
+build datastructures: phony libs/datastructures/libdatastructures.a
+
+build libalgorithms.a: phony libs/algorithms/libalgorithms.a
+
+build libdatastructures.a: phony libs/datastructures/libdatastructures.a
 
 # =============================================================================
 # Folder targets.
@@ -248,14 +283,14 @@ build libs/all: phony libs/datastructures/all libs/algorithms/all
 #############################################
 # Folder: C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/algorithms
 
-build libs/algorithms/all: phony
+build libs/algorithms/all: phony libs/algorithms/libalgorithms.a
 
 # =============================================================================
 
 #############################################
 # Folder: C:/Users/artem/CLionProjects/OOP2023/cmake-build-debug/libs/datastructures
 
-build libs/datastructures/all: phony libs/datastructures/libdata_structures.a
+build libs/datastructures/all: phony libs/datastructures/libdatastructures.a
 
 # =============================================================================
 # Built-in targets

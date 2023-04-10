@@ -50,7 +50,7 @@
 					"source" : "libs/datastructures",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -62,7 +62,11 @@
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 0,
-					"source" : "libs/algorithms"
+					"source" : "libs/algorithms",
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"name" : "Debug",
@@ -80,7 +84,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -89,15 +94,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OOP2023::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OOP2023-Debug-db573ce687c4f75360d4.json",
+					"jsonFile" : "target-OOP2023-Debug-97ce45cc1f61e9fe4fe2.json",
 					"name" : "OOP2023",
 					"projectIndex" : 0
 				},
 				{
+					"directoryIndex" : 3,
+					"id" : "algorithms::@4f84be16bc75261b2db5",
+					"jsonFile" : "target-algorithms-Debug-01b1dd469353e543753c.json",
+					"name" : "algorithms",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 2,
-					"id" : "data_structures::@16bd4563d045845c2191",
-					"jsonFile" : "target-data_structures-Debug-afc7b6135e559af19203.json",
-					"name" : "data_structures",
+					"id" : "datastructures::@16bd4563d045845c2191",
+					"jsonFile" : "target-datastructures-Debug-9f5abb06d1cd9d0a47bb.json",
+					"name" : "datastructures",
 					"projectIndex" : 0
 				}
 			]
